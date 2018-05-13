@@ -32,10 +32,12 @@ static int		ft_verif(char str[])
 	int		i;
 	int		code;
 
-	i = -1;
 	code = 3;
 	if (ft_verif_operant(str, g_opptab) && str[1] == '\0')
 		code = 2;
+	i = -1;
+	if (str[0] == '-')
+		i = 0;
 	while (code != 2 && code != 0 && str[++i])
 	{
 		if (str[i] >= '0' && str[i] <= '9')
@@ -46,7 +48,7 @@ static int		ft_verif(char str[])
 	return (code);
 }
 
-static char	*ft_calcul(t_pile **pile, char *str)
+static char		*ft_calcul(t_pile **pile, char *str)
 {
 	int		a;
 	int		b;
