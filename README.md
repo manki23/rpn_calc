@@ -1,5 +1,5 @@
 # rpn_calc
-
+## Sujet
 Notation Polonaise Inversée
 
 Assignment name  : rpn_calc
@@ -27,6 +27,7 @@ vous devrez afficher ```Error``` sur la sortie standard, suivie d'une newline.
 Tous les opérandes de la chaine de caracteres doivent pouvoir etre contenus
 dans un int.
 
+## Exemples
 Exemple de formules converties en NPI :
 ```
 3 + 4                   >>    3 4 +
@@ -55,4 +56,12 @@ $> ./rpn_calc "1 2 3 4 +" | cat -e
 Error$
 $> ./rpn_calc |cat -e
 Error$
+```
+## Téléchargement
+```
+git clone https://github.com/manki23/rpn_calc.git ; cd rpn_calc
+```
+## Compilation
+```
+gcc *.c -o rpn_calc
 ```
